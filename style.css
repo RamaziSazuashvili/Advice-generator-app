@@ -1,5 +1,6 @@
 body {
     display: flex;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -13,6 +14,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
+    flex:1;
+    flex-direction: column;
 }
 
 .advice-box {
@@ -61,8 +64,48 @@ body {
 .pause-icon {
     color: #CEE3E9;
     margin: 0 20px;
+    font-size: 20px;
+    font-weight:900;
 }
 
 .dice-button {
-    
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #53FFAA;
+    border: none;
+    border-radius: 50%;
+    padding: 16px;
+    cursor: pointer;
+    /*box-shadow: 0 0 20px #53ffaa80;*/
+    transition: all 0.3s ease;
+}
+
+.dice-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.dice-button:hover {
+    box-shadow: 0 0 40px #53ffaacc;
+}
+
+.attribution {
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.attribution a {
+    color: #53FFAA;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
 }
