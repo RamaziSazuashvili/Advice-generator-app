@@ -7,22 +7,35 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Advice generator app</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 <body>
 
-  Advice #<!-- Advice ID goes here -->
+  <div class="container">
+    <div class="advice-box">
+      <p class="advice-id">ADVICE #<span id="advice-id">117</span></p>
+      <p class="advice-text">“It is easy to sit up and take notice, what’s difficult is getting up and taking action.”</p>
+      <div class="divider">
+        <span class="pause-icon">||</span>
+      </div>
+      <button id="advice-button" class="dice-button">
+        <img src="./images/icon-dice.svg" alt="dice">
+      </button>
+    </div>
 
-  "<!-- Advice text goes here -->"
+    </div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <!--<div class="attribution">
+    Challenge by <a href="https://github.com/nikanoza" target="_blank">Nika Nozadze</a>. 
+    Coded by <a href="https://github.com/RamaziSazuashvili">Ramazi Sazuashvili</a>.
+  </div>-->
+  <script src="./script.js"></script>
 </body>
 </html>
